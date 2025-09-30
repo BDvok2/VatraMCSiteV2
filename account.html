@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VatraMC - Account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body class="centered">
+    <!-- Login Form (initially visible) -->
+    <div id="login-container" class="login-container">
+        <div class="login-box">
+            <h2>Login with Minecraft</h2>
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Minecraft Username" class="mc-input">
+                <button id="login-btn" class="mc-button">Login</button>
+            </div>
+            <p class="login-message" id="login-message"></p>
+        </div>
+    </div>
+
+    <!-- Main App (initially hidden) -->
+    <div id="app-container" class="hidden">
+        <header class="app-header">
+            
+            <div class="user-info">
+                <button class="mc-box exit-btn1" id="exit-btn" ><</button>
+                <img src="images/steve.png" alt="Player" id="player-avatar" class="player-avatar">
+                <span id="player-username"></span>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-btn" id="account" data-page="account">Account</button>
+                <button class="nav-btn" data-page="towns">Towns</button>
+                <button class="nav-btn" data-page="settings">Settings</button>
+                <button id="logout-btn" class="nav-btn">Logout</button>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            
+            <div id="account-page" class="page">
+                <h2>Account Settings</h2>
+                <div class="skin-preview">
+                    <img id="player-skin" alt="Minecraft Skin" class="player-skin">
+                </div>
+                <p>Account management coming soon.</p>
+            </div>
+            <div id="towns-page" class="page">
+                <h2>TOWNS</h2>
+            </div>
+            <div id="settings-page" class="page">
+                <h2>Settings</h2>
+                <p>Settings coming soon.</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VatraMC - Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #map-container {
+            width: 90%;
+            height:  90vh;
+            position: relative;
+        }
+        #map-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+       
+    </style>
+</head>
+<body class="centered">
+    <div id="map-container">
+        <button class="mc-box exit-btn" id="exit-btn"><</button>
+        <iframe 
+            id="map-iframe" 
+            src="http://134.249.64.192:8123/?world=world&renderer=vintage_story&zoom=0&x=-16&z=-87" 
+            allowfullscreen="true"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true">
+        </iframe>
+    </div>
+</body>
+</html>
