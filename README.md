@@ -1,2 +1,2 @@
 # KruvonicSiteV2
-I hate nigers
+I hate fingers
